@@ -1,10 +1,32 @@
-/* Header styling */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 1300px;
+
+}
+
+
+main {
+    padding-top: 80px; 
+}
+
 header {
     background-color: rgb(27, 148, 188);
     padding: 20px 40px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 60px; 
 }
 
 .header-container {
@@ -12,7 +34,6 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
 header h2 {
     margin: 0;
     font-family: 'Brush Script MT', cursive;
@@ -34,6 +55,100 @@ header a:hover {
     text-decoration: underline;
 }
 
+/* Home-page */
+
+#showcase{
+    background-image: url('../imagini/PozaDeInceput.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; 
+    margin-top:60px;
+    min-height: 500px;
+    text-align: center;
+    
+    
+}
+#showcase h1{
+    color:white;
+    font-size: 50px;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+/* #home-page { 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#home-page main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(imagini/PozaDeInceput.jpeg);
+    background-size: cover; 
+    background-position: center center; 
+    padding: 100px 20px 20px; 
+    position: relative;
+}
+
+#home-page main img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid white;
+    display: block;
+    margin: 0 auto;
+}
+
+#home-page main b {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}*/
+
+
+/* Despre noi page */
+#Despre-noi main {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;  /* Stack the elements vertically */
+    justify-content: flex-start; /* Align items at the top, no vertical centering */
+    align-items: center;     /* Center horizontally */
+    min-height: 100vh;       /* Ensure it takes at least full viewport height */
+    margin: 0;
+    padding-top: 80px;       /* Optional: padding to account for the header */
+}
+
+/* Paragraph styling - no need to repeat the same for each paragraph */
+#Despre-noi main p {
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#Despre-noi main h1{
+    font-size: 10px;
+    }
+
+#Despre-noi main img{
+    max-width: 100%;
+    height: auto;
+    border: 5px solid white;
+    display: block;
+    margin: 0 auto;
+}
+
+
 /* Footer styling */
 footer {
     text-align: center;
@@ -41,6 +156,7 @@ footer {
     color: black;
     padding: 10px 0;
     font-size: 14px;
+    margin-top: auto; 
 }
 
 footer a {
