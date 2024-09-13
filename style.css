@@ -8,10 +8,10 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    height: 1300px;
+    height: 1400px;
+    background-color: #e6f2ff;
 
 }
-
 
 main {
     padding-top: 80px; 
@@ -57,97 +57,229 @@ header a:hover {
 
 /* Home-page */
 
-#showcase{
-    background-image: url('../imagini/PozaDeInceput.jpeg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain; 
-    margin-top:60px;
-    min-height: 500px;
-    text-align: center;
-    
-    
-}
-#showcase h1{
-    color:white;
-    font-size: 50px;
-    line-height: 1.6em;
-    padding-top: 30px;
-}
-/* #home-page { 
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-#home-page main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(imagini/PozaDeInceput.jpeg);
-    background-size: cover; 
-    background-position: center center; 
-    padding: 100px 20px 20px; 
+.container {
     position: relative;
+    max-width: 800px;
+    margin: 80px auto 0;
+    padding: 0;
+    text-align: center;
 }
 
-#home-page main img {
+.container img {
+    width: 100%;
     max-width: 100%;
     height: auto;
-    border: 5px solid white;
-    display: block;
-    margin: 0 auto;
+    border-radius: 10px;
 }
 
-#home-page main b {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    text-align: center;
-    font-size: 24px;
+.container h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    padding: 10px;
-    border-radius: 10px;
-}*/
-
+    font-size: 35px;
+}
 
 /* Despre noi page */
 #Despre-noi main {
-    background-color: lightgrey;
     display: flex;
-    flex-direction: column;  /* Stack the elements vertically */
-    justify-content: flex-start; /* Align items at the top, no vertical centering */
-    align-items: center;     /* Center horizontally */
-    min-height: 100vh;       /* Ensure it takes at least full viewport height */
+    flex-direction: column;  
+    justify-content: flex-start; 
+    align-items: center;    
+    min-height: 100vh;      
     margin: 0;
-    padding-top: 80px;       /* Optional: padding to account for the header */
+    padding-top: 80px;       
 }
 
-/* Paragraph styling - no need to repeat the same for each paragraph */
 #Despre-noi main p {
-    width: 60%;
-    border: 3px solid #73AD21;
-    padding: 10px;
-    margin-bottom: 10px;
-    text-align: center;
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #Despre-noi main h1{
-    font-size: 10px;
-    }
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top:30px;
+}
 
-#Despre-noi main img{
-    max-width: 100%;
+#Despre-noi main img {
+    width: 70%; 
+    max-width: 600px; 
     height: auto;
-    border: 5px solid white;
+    border: 5px solid transparent;
+    border-radius: 10px;
     display: block;
     margin: 0 auto;
 }
 
+/* Bilete */
+
+#Bilete main{
+    display: flex;
+    flex-direction: column;  
+    justify-content: flex-start; 
+    align-items: center;    
+    min-height: 100vh;      
+    margin: 0;
+    padding-top: 80px; 
+}
+
+#Bilete main h1{
+    font-size: 30px;
+    text-decoration: underline;
+    margin-top:20px;
+}
+
+#Bilete main img{
+    width: 70%; 
+    max-width: 600px; 
+    height: auto;
+    border: 5px solid transparent;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+#Bilete main p{
+    width: 70%;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Bilete main table {
+    width: 80%; 
+    margin: 20px auto; 
+    border-collapse: collapse; 
+}
+
+#Bilete main table th, 
+#Bilete main table td {
+    border: 1px solid #ddd;
+    padding: 12px 15px; 
+    text-align: center; 
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+#Bilete main table th {
+    background-color: #f4f4f4; 
+    font-weight: bold; 
+    font-size: 18px; 
+}
+
+#Bilete main table td {
+    font-size: 16px; 
+}
+
+#Bilete main table button {
+    padding: 10px 15px; 
+    background-color: #007BFF; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+}
+
+#Bilete main table button:hover {
+    background-color: #0056b3; 
+}
+
+/* Galerie foto */
+#Galerie main{
+    display: flex;
+    flex-direction: column;  
+    justify-content: flex-start; 
+    align-items: center;    
+    min-height: 100vh;      
+    margin: 0;
+    padding-top: 80px; 
+} 
+
+.containerMulticultural{
+    max-width: 1100px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 30px;
+}
+
+.containerMulticultural h2{
+    text-align:center;
+     text-decoration: underline;
+}
+
+.containerRock{
+    max-width: 1100px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.containerRock h2{
+    text-align:center;
+    text-decoration: underline;
+}
+
+#Galerie main h1{
+    background-color: rgb(27, 148, 188);
+    border-radius: 10px;
+    color:white;
+    font-size: 50px;
+}
+
+#Galerie main img{
+    border-radius: 10px;
+}
+
+#Galerie main img:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    filter: brightness(0.7);
+    transform: scale(1.1);
+}
+
+/* Evenimente */
+#Evenimente main{
+    display: flex;
+    flex-direction: column;  
+    justify-content: flex-start; 
+    align-items: center;    
+    min-height: 100vh;      
+    margin: 0;
+    padding-top: 80px; 
+} 
+
+.containerEvenimente {
+    position: relative;
+    max-width: 500px;
+    margin: 50px auto 0;
+    padding: 0;
+    text-align: center;
+}
+
+.containerEvenimente img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.containerEvenimente h1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 35px;
+}
+
+.pozeEvenimente{
+    /* Aici am ramas */
+}
 
 /* Footer styling */
 footer {
