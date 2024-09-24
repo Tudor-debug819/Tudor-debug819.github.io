@@ -3,67 +3,68 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Flexbox Layout</title>
     <link rel="stylesheet" href="flex.css">
-    <title>grid_vs_flex</title>
 </head>
 
 <body>
-
-    <header>
-        <div class="header-container">
-            <h2>grid_vs_flex</h2>
-            <nav>
-                <a href="flex.html">Flexbox</a>
-                <a href="grid.html">Grid</a>
-            </nav>
+    <nav>
+        <div class="nav-heading">
+            <h2>flexbox</h2>
         </div>
-    </header>
-
-    <aside>Sidebar</aside>
-
-    <h2>Flexbox</h2>
-        <div class="flexbox-container">
-            <div class="card">
-                <img src="catel1.jpg" width="300" height="300">
-                <div class="card-content">
-                    <h3>Rex</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident, repudiandae tempore
-                        explicabo iste harum rem at corrupti eveniet id ipsa a magni, architecto, blanditiis
-                        reprehenderit.
-                        Incidunt ad aliquid ea.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="catel2.jpg" width="300" height="300">
-                <div class="card-content">
-                    <h3>Max</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident, repudiandae tempore
-                        explicabo iste harum rem at corrupti eveniet id ipsa a magni, architecto, blanditiis
-                        reprehenderit.
-                        Incidunt ad aliquid ea.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="catel3.jpg" width="300" height="300">
-                <div class="card-content">
-                    <h3>Luna</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident, repudiandae tempore
-                        explicabo iste harum rem at corrupti eveniet id ipsa a magni, architecto, blanditiis
-                        reprehenderit.
-                        Incidunt ad aliquid ea.</p>
-                </div>
-            </div>
-
+        <div class="nav-links">
+            <a href="flex.html">Flexbox</a>
+            <a href="grid.html">Grid</a>
         </div>
+    </nav>
 
-    <footer>
-        <hr>
-        &copy; copyright reserved
-    </footer>
+    <div class="content-wrapper">
+        <aside>Sidebar</aside>
+        <main>
+            <div class="flex-container">
+                <div class="card">
+                    <img src="catel1.jpg" width="300" height="300">
+                    <div class="card-content">
+                        <h3>Rex</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident, repudiandae tempore
+                            explicabo iste harum rem at corrupti eveniet id ipsa a magni, architecto, blanditiis
+                            reprehenderit.
+                            Incidunt ad aliquid ea.</p>
+                    </div>
+                </div>
 
+                <div class="card">
+                    <img src="catel2.jpg" width="300" height="300">
+                    <div class="card-content">
+                        <h3>Max</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident, repudiandae tempore
+                            explicabo iste harum rem at corrupti eveniet id ipsa a magni, architecto, blanditiis
+                            reprehenderit.
+                            Incidunt ad aliquid ea.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="catel3.jpg" width="300" height="300">
+                    <div class="card-content">
+                        <h3>Luna</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa provident, repudiandae tempore
+                            explicabo iste harum rem at corrupti eveniet id ipsa a magni, architecto, blanditiis
+                            reprehenderit.
+                            Incidunt ad aliquid ea.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="footer-wrapper">
+        <aside>Sidebar</aside>
+        <footer>
+            &copy; copyright reserved
+        </footer>
+    </div>
 </body>
 
 </html>
